@@ -17,7 +17,7 @@ command -v fzf || brew install fzf
 
 # tmux
 command -v tmux || brew install tmux
-ln -sF "$SCRIPT_DIR/.tmux.conf" ~/.tmux.conf
+ln -sF "$SCRIPT_DIR/tmux.conf" ~/.tmux.conf
 
 # Git
 cat > ~/.gitconfig << 'EOF'
@@ -30,4 +30,4 @@ cat > ~/.gitconfig << 'EOF'
 EOF
 
 
-echo "source $SCRIPT_DIR/zshrc || echo \"failed to source zshrc\"" > ~/.zshrc
+echo "source '$SCRIPT_DIR/zshrc' || echo 'failed to source zshrc'" > ~/.zshrc
