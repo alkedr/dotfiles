@@ -30,7 +30,7 @@ alias gst='g status'
 alias gf='g fetch'
 alias gp='g pull'
 alias gps='g push'
-alias gpf='g push --force'
+alias gpf='g push --force-with-lease'
 
 gs() {
   g switch "$@" && return
