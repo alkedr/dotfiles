@@ -15,6 +15,9 @@ command -v brew || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/
 command -v fzf || brew install fzf
 [ -d ~/code/fzf-tab ] || git clone https://github.com/Aloxaf/fzf-tab.git ~/code/fzf-tab
 
+# ripgrep
+command -v rg || brew install ripgrep
+
 # tmux
 command -v tmux || brew install tmux
 ln -sF "$SCRIPT_DIR/tmux.conf" ~/.tmux.conf
