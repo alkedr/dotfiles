@@ -11,6 +11,10 @@ command -v brew || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/
 [ -d /Applications/iTerm.app ] || brew install --cask iterm2
 [ -d /Applications/Rectangle.app ] || brew install --cask rectangle
 
+# AI CLIs
+command -v claude || brew install --cask claude-code
+command -v codex || brew install --cask codex
+
 # fzf
 command -v fzf || brew install fzf
 [ -d ~/code/fzf-tab ] || git clone https://github.com/Aloxaf/fzf-tab.git ~/code/fzf-tab
