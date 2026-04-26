@@ -3,6 +3,7 @@
 set -eux
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+export PATH="$HOME/.local/bin:/opt/homebrew/bin:$PATH"
 
 # Install homebrew
 command -v brew || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -12,8 +13,10 @@ command -v brew || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/
 [ -d /Applications/Rectangle.app ] || brew install --cask rectangle
 
 # AI CLIs
-command -v claude || brew install --cask claude-code
-command -v codex || brew install --cask codex
+command -v claude || curl -fsSL https://claude.ai/install.sh | bash
+command -v npm || brew install node
+command -v codex || npm install -g @openai/codex
+command -v agent || curl https://cursor.com/install -fsS | bash
 
 # fzf
 command -v fzf || brew install fzf
