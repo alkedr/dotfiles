@@ -39,8 +39,5 @@ cat > ~/.gitconfig << 'EOF'
 	defaultBranch = main
 EOF
 
-# Claude Code
-command -v claude || { curl -fsSL https://claude.ai/install.sh | bash }
-
 
 echo "source '$SCRIPT_DIR/zshrc' || echo 'failed to source zshrc'" > ~/.zshrc

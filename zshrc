@@ -45,7 +45,6 @@ alias gpr='gh pr create --web'
 
 
 # Claude Code
-export PATH="$HOME/.local/bin:$PATH"
 # Workaround for #49268 — Opus 4.7 returns empty thinking blocks unless
 # --thinking-display summarized is passed explicitly.
 alias c='claude --thinking-display summarized'
