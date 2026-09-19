@@ -1,0 +1,11 @@
+# Whitelist: everything is ignored unless re-included below.
+/*
+!/.gitignore
+!/settings.json
+!/CLAUDE.md
+!/keybindings.json
+!/skills/
+!/agents/
+!/commands/
+/skills/synced/
+.DS_Store
