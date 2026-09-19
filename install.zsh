@@ -11,6 +11,7 @@ command -v brew || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/
 # Apps
 [ -d /Applications/iTerm.app ] || brew install --cask iterm2
 [ -d /Applications/Rectangle.app ] || brew install --cask rectangle
+[ -d /Applications/IINA.app ] || brew install --cask iina
 
 # AI CLIs
 command -v claude || curl -fsSL https://claude.ai/install.sh | bash
