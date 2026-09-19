@@ -57,7 +57,7 @@ ln -sF "$SCRIPT_DIR/tmux.conf" ~/.tmux.conf
 # Git
 cat > ~/.gitconfig << 'EOF'
 [user]
-	name = Alex Kedryk
+	name = Sasha Kedryk
 	email = alexander.kedrik@gmail.com
 
 [init]
